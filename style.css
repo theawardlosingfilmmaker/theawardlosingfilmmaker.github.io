@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&family=JetBrains+Mono:wght@400;600&family=Instrument+Serif:ital@1&display=swap");
+
+:root { --bg: #0A0A0A; --ink: #F2F2F0; --red: #FF3B30; --grey: #8A8A8A; }
+* { box-sizing: border-box; margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.65 "JetBrains Mono", monospace; }
+main { max-width: 760px; margin: 0 auto; padding: 64px 16px 96px; }
+a { color: var(--ink); text-decoration-color: var(--red); text-underline-offset: 3px; }
+.mark { font: 900 20px "Outfit", sans-serif; letter-spacing: .02em; text-decoration: none; }
+.mark span { color: var(--red); }
+h1 { font: 900 clamp(40px, 9vw, 76px)/1 "Outfit", sans-serif; margin: 72px 0 24px; letter-spacing: -.01em; }
+h1 em { color: var(--red); font-style: normal; }
+h2 { font: 800 22px "Outfit", sans-serif; margin: 40px 0 8px; }
+p, li { color: #d6d6d3; max-width: 62ch; }
+p + p { margin-top: 12px; }
+ul { padding-left: 20px; margin-top: 8px; }
+.aside { font: italic 24px "Instrument Serif", serif; color: var(--grey); margin-top: 8px; }
+.line { height: 2px; background: var(--red); width: 96px; margin: 40px 0; }
+.links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 32px; }
+footer { margin-top: 80px; color: var(--grey); font-size: 13px; display: flex; flex-wrap: wrap; gap: 16px; }
+footer a { color: var(--grey); }
