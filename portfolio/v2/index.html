@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Santosh Chandan · Filmmaker, editor, colourist</title>
+<meta name="description" content="Santosh Chandan is a filmmaker, editor and colourist who also runs Meta ads. Founder of The Award Losing Films.">
+<meta property="og:title" content="Santosh Chandan · Filmmaker, editor, colourist">
+<meta property="og:description" content="Founder of The Award Losing Films. YouTube production and post for Acharya Prashant. Meta ads for five companies.">
+<meta property="og:image" content="https://theawardlosingfilmmaker.github.io/portfolio/v2/assets/santosh.jpg">
+<style>
+@font-face{font-family:G;src:url(assets/schibsted-grotesk-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:G;src:url(assets/schibsted-grotesk-latin-500-normal.woff2) format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:G;src:url(assets/schibsted-grotesk-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:G;src:url(assets/schibsted-grotesk-latin-900-normal.woff2) format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:N;src:url(assets/newsreader-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:N;src:url(assets/newsreader-latin-400-italic.woff2) format('woff2');font-style:italic;font-display:swap}
+:root{--bg:#f4f2ee;--ink:#111;--grey:#6f6b66;--rule:#d6d1c9;--hi:#ffd21f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:G,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.w{width:min(1200px,92vw);margin:0 auto}
+
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px}
+header.nav b{font-weight:700}
+header.nav nav{display:flex;gap:26px}
+header.nav nav a{text-decoration:none;color:var(--grey)}
+header.nav nav a:hover{color:var(--ink)}
+
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;align-items:end;padding:6vh 0 8vh;border-bottom:2px solid var(--ink)}
+.hero h1{font-weight:900;font-size:clamp(64px,10.5vw,168px);line-height:.86;letter-spacing:-.045em}
+.hero .sub{font-size:clamp(19px,1.9vw,24px);line-height:1.4;margin-top:34px;max-width:560px;font-weight:500}
+.hero .sub span{color:var(--grey);font-weight:400}
+.hero .links{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-block;padding:14px 22px;border:2px solid var(--ink);text-decoration:none;font-weight:700;font-size:15px;transition:background .15s,color .15s}
+.btn.dark{background:var(--ink);color:var(--bg)}
+.btn:hover{background:var(--hi);color:var(--ink);border-color:var(--ink)}
+.hero img{width:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(1.05)}
+
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:5vw;padding:9vh 0}
+.intro p{font-family:N;font-size:clamp(22px,2.2vw,30px);line-height:1.32}
+.intro p.r{font-family:G;font-size:18px;line-height:1.6;color:#333}
+
+.nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
+.nums div{padding:22px 24px 8vh 0}
+.nums b{display:block;font-weight:900;font-size:clamp(48px,6vw,92px);letter-spacing:-.04em;line-height:1}
+.nums span{display:block;font-size:15px;line-height:1.45;color:#333;margin-top:12px;max-width:220px}
+
+h2{font-weight:900;font-size:clamp(40px,5vw,72px);letter-spacing:-.035em;line-height:1;padding:9vh 0 3vh}
+h2 small{font-family:N;font-style:italic;font-weight:400;font-size:.4em;letter-spacing:0;color:var(--grey);margin-left:14px;vertical-align:middle}
+
+.list{border-top:2px solid var(--ink)}
+.item{display:grid;grid-template-columns:60px 1.6fr 1fr 120px;gap:20px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--rule);text-decoration:none;cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left;font:inherit;color:inherit;transition:background .15s}
+.item:hover{background:var(--hi)}
+.item .n{font-size:14px;color:var(--grey);padding-left:6px}
+.item .t{font-weight:700;font-size:clamp(20px,2.2vw,30px);letter-spacing:-.02em;line-height:1.15}
+.item .c{font-size:16px;color:#444}
+.item .v{font-size:16px;text-align:right;padding-right:6px;font-weight:500;white-space:nowrap}
+
+.jobs{border-top:2px solid var(--ink)}
+.job{display:grid;grid-template-columns:320px 1fr;gap:5vw;padding:34px 0;border-bottom:1px solid var(--rule)}
+.job h3{font-size:24px;font-weight:700;letter-spacing:-.01em}
+.job .meta{color:var(--grey);font-size:16px;line-height:1.5;margin-top:6px}
+.job p{font-size:18px;line-height:1.6;color:#222;max-width:680px}
+.job p+p{margin-top:12px}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:5vw;border-top:2px solid var(--ink);padding-top:28px}
+.cols p{font-size:17px;line-height:1.65;color:#222;margin-bottom:14px}
+.cols h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px}
+
+.contact{background:var(--ink);color:var(--bg);margin-top:12vh;padding:12vh 0 6vh}
+.contact h2{padding:0;font-size:clamp(56px,9vw,140px)}
+.contact p{font-size:20px;line-height:1.5;margin-top:24px;max-width:620px;color:#cfcac2}
+.contact .links{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.contact .btn{border-color:var(--bg);color:var(--bg)}
+.contact .btn.dark{background:var(--bg);color:var(--ink)}
+.contact .btn:hover{background:var(--hi);color:var(--ink);border-color:var(--hi)}
+.contact .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:10vh;padding-top:20px;border-top:1px solid #333;font-size:15px;color:#a7a199}
+.contact .row a{text-decoration:none}
+.contact .row a:hover{color:var(--hi)}
+
+#modal{position:fixed;inset:0;background:rgba(17,17,17,.94);display:none;place-items:center;padding:4vw;z-index:10}
+#modal.on{display:grid}
+#modal .box{width:min(1100px,100%);aspect-ratio:16/9;background:#000;position:relative}
+#modal iframe{width:100%;height:100%;border:0}
+#modal button{position:absolute;top:-42px;right:0;background:none;border:0;color:var(--bg);font:700 15px G,sans-serif;cursor:pointer}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}.hero img{max-width:360px}
+  .intro,.cols,.job{grid-template-columns:1fr}
+  .nums{grid-template-columns:1fr 1fr}.nums div{padding-bottom:28px}
+  .item{grid-template-columns:40px 1fr;row-gap:6px}.item .c{grid-column:2}.item .v{grid-column:2;text-align:left}
+  header.nav nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="w">
+  <header class="nav"><b>Santosh Chandan</b><nav><a href="#work">Work</a><a href="#ads">Ads</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>
+
+  <section class="hero">
+    <div>
+      <h1>Santosh<br>Chandan</h1>
+      <p class="sub">Filmmaker, editor and colourist. <span>I also run Meta ads, so I know what happens to a video after it's posted.</span></p>
+      <div class="links">
+        <a class="btn dark" href="#work">See the work</a>
+        <a class="btn" href="Santosh_Chandan_Resume_v2.pdf" download>Download resume</a>
+      </div>
+    </div>
+    <img src="assets/santosh.jpg" alt="Santosh Chandan">
+  </section>
+
+  <section class="intro">
+    <p>I run <b>The Award Losing Films</b>, my production house, where I've directed a feature and several shorts. I handled YouTube production and post for Acharya Prashant, and I've run Meta ads for five companies.</p>
+    <p class="r">What I'm after: a role where the video and the marketing sit with the same person. Video marketing lead, performance creative, post-production lead or senior editor. Remote or in the office, both work for me.</p>
+  </section>
+
+  <section class="nums">
+    <div><b>2.3M</b><span>views on one podcast edit for Acharya Prashant</span></div>
+    <div><b>2.7M+</b><span>views across the six videos below</span></div>
+    <div><b>5</b><span>companies I've run Meta ads for, each in a different industry</span></div>
+    <div><b>1</b><span>feature film directed, plus several shorts</span></div>
+  </section>
+
+  <h2 id="work">Selected work <small>click a title to play</small></h2>
+  <div class="list">
+    <button class="item" data-yt="KBLhLIOecvE"><span class="n">01</span><span class="t">Acharya Prashant Podcast: On Life, Spirituality and Beyond</span><span class="c">Podcast · edit, colour, sound</span><span class="v">2.32M views</span></button>
+    <button class="item" data-yt="F_NTqvs1q6M"><span class="n">02</span><span class="t">"Enlightenment" Is a Hoax</span><span class="c">Acharya Prashant · UK Tour 2026</span><span class="v">211K views</span></button>
+    <button class="item" data-yt="fyif6U6kQxA"><span class="n">03</span><span class="t">Is Ego or Consciousness Fundamental?</span><span class="c">Acharya Prashant · long-form</span><span class="v">132K views</span></button>
+    <button class="item" data-yt="3D9-TTv1Htw"><span class="n">04</span><span class="t">India's Portrait Artist of the Year 2025</span><span class="c">Season 1 grand finale · Palettes Pioneer India</span><span class="v">66K views</span></button>
+    <button class="item" data-yt="3oGy6rrikM4"><span class="n">05</span><span class="t">The Pink Umbrella</span><span class="c">Official trailer</span><span class="v">7.4K views</span></button>
+    <button class="item" data-yt="zMBbr7L8nTo"><span class="n">06</span><span class="t">Khwahish</span><span class="c">Music video · Vishal Chhoker &amp; Fiza</span><span class="v">2.5K views</span></button>
+  </div>
+
+  <h2 id="ads">Ads and promos <small>opens in Google Drive</small></h2>
+  <div class="list">
+    <a class="item" href="https://drive.google.com/file/d/1VjHxbUmy1PPjsJUgIcSTv4PFZN_wNIPC/view" target="_blank" rel="noopener"><span class="n">01</span><span class="t">Cadbury Dairy Milk × Flipkart</span><span class="c">Valentine's campaign</span><span class="v">Watch ↗</span></a>
+    <a class="item" href="https://drive.google.com/file/d/1WbpnFYEUTsd0VEv4rlE0yf5HjDXN9XWn/view" target="_blank" rel="noopener"><span class="n">02</span><span class="t">The Gita Deepotsav</span><span class="c">Promo · Acharya Prashant</span><span class="v">Watch ↗</span></a>
+    <a class="item" href="https://drive.google.com/file/d/1NrdoHrP-AYVtzCniZWnq5V7ladzzNHvn/view" target="_blank" rel="noopener"><span class="n">03</span><span class="t">Khwahish</span><span class="c">Music video teaser</span><span class="v">Watch ↗</span></a>
+    <a class="item" href="https://drive.google.com/file/d/1xSRNkK0UlxurmwYx7eRb4V2geC2w32oy/view" target="_blank" rel="noopener"><span class="n">04</span><span class="t">The Atul Kumar Workshop</span><span class="c">Workshop promo · Art Circle</span><span class="v">Watch ↗</span></a>
+    <a class="item" href="https://drive.google.com/file/d/1fB2N4f7nzTCdhr78dV3EQYSak4BPj9rC/view" target="_blank" rel="noopener"><span class="n">05</span><span class="t">The Invisible Text with Saddam Hussain</span><span class="c">Workshop promo · Art Circle</span><span class="v">Watch ↗</span></a>
+  </div>
+
+  <h2 id="experience">Experience</h2>
+  <div class="jobs">
+    <div class="job"><div><h3>The Award Losing Films</h3><div class="meta">Founder, director<br>My production house</div></div>
+      <div><p>Directed a feature film and several short films. Other projects: the official music video for Khwahish (Vishal Chhoker &amp; Fiza), the official trailer for The Pink Umbrella, and the Season 1 grand finale film for India's Portrait Artist of the Year 2025 (Palettes Pioneer India).</p></div></div>
+    <div class="job"><div><h3>Acharya Prashant</h3><div class="meta">PrashantAdvait Foundation<br>Post Production Manager</div></div>
+      <div><p>Ran the YouTube pipeline from shoot to upload: editing, colour, sound, graphics and delivery.</p><p>Edits include the Acharya Prashant Podcast (2.32M views), "Enlightenment Is a Hoax" (211K), "Is Ego or Consciousness Fundamental?" (132K) and the Gita Deepotsav promo.</p></div></div>
+    <div class="job"><div><h3>Meta ads</h3><div class="meta">Freelance</div></div>
+      <div><p>Set up, ran and optimised Meta ad campaigns in Ads Manager for five companies, each in a different industry. Ad film work for the Cadbury Dairy Milk × Flipkart Valentine's campaign.</p></div></div>
+    <div class="job"><div><h3>Art Circle Productions</h3><div class="meta">Founder<br>Mumbai</div></div>
+      <div><p>Free, in-person workshops in photography, photo editing and film editing for film and design students. I shoot and edit the workshop films, including the ones with Atul Kumar and Saddam Hussain.</p></div></div>
+  </div>
+
+  <h2>Education and tools</h2>
+  <div class="cols">
+    <div>
+      <h4>Education</h4>
+      <p><b>B.Sc in Cinema</b>, Asian Academy of Film &amp; Television (Marwah Studios), 2020–2023. Specialised in cinematography.</p>
+      <p><b>Diploma in Editing</b>, Wiztoonz Academy of Media &amp; Design, 2018–2020. Post-production, animation and VFX, colour grading.</p>
+      <h4 style="margin-top:28px">Languages</h4><p>English, Hindi</p>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <p><b>Edit and finish:</b> Premiere Pro, After Effects, DaVinci Resolve, Final Cut Pro, Avid, Audition</p>
+      <p><b>Design:</b> Photoshop, Illustrator, Lightroom</p>
+      <p><b>Marketing:</b> Meta Ads Manager, YouTube, Shorts and Reels</p>
+      <p><b>Camera:</b> Sony Alpha, Canon R, gimbal</p>
+      <p><b>AI:</b> Firefly, Runway, Kling, Veo, Higgsfield, ElevenLabs, Claude</p>
+    </div>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="w">
+    <h2>Let's talk.</h2>
+    <p>If you're hiring for video marketing, Meta ads, post-production or a senior editor, I'd like to hear about it.</p>
+    <div class="links">
+      <a class="btn dark" href="mailto:theawardlosingfilmmaker@gmail.com">Email me</a>
+      <a class="btn" href="https://wa.me/918920577598" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="Santosh_Chandan_Resume_v2.pdf" download>Resume (PDF)</a>
+    </div>
+    <div class="row">
+      <span><a href="tel:+918920577598">+91 89205 77598</a> · <a href="mailto:theawardlosingfilmmaker@gmail.com">theawardlosingfilmmaker@gmail.com</a></span>
+      <span><a href="https://www.instagram.com/theawardlosingfilmmaker/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.behance.net/santoshchandan" target="_blank" rel="noopener">Behance</a> · <a href="https://ytjobs.co/talent/profile/655169" target="_blank" rel="noopener">YT Jobs</a></span>
+    </div>
+  </div>
+</section>
+
+<div id="modal" role="dialog" aria-modal="true"><div class="box"><button aria-label="Close">Close ✕</button><div id="player" style="width:100%;height:100%"></div></div></div>
+<script>
+var m=document.getElementById('modal'),pl=document.getElementById('player');
+document.querySelectorAll('[data-yt]').forEach(function(b){b.addEventListener('click',function(){pl.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video"></iframe>';m.classList.add('on')})});
+function x(){m.classList.remove('on');pl.innerHTML=''}
+m.addEventListener('click',function(e){if(e.target===m||e.target.tagName==='BUTTON')x()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')x()});
+</script>
+</body>
+</html>
